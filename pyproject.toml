@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tc_http_loader_prefix"
+version = "0.1.0"
+dependencies = ["thumbor"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["tc_http_loader_prefix"]
+
+[project.entry-points."thumbor.loaders"]
+custom_loader = "tc_http_loader_prefix.http_loader_prefix"
