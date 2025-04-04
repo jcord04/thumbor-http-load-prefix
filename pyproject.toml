@@ -10,8 +10,8 @@ dependencies = ["thumbor"]
 [project.optional-dependencies]
 dev = ["pytest"]
 
-[tool.setuptools]
-packages = ["tc_http_loader_prefix"]
+[tool.setuptools.packages.find]
+where = ["."]
 
 [project.entry-points."thumbor.loaders"]
-custom_loader = "tc_http_loader_prefix.http_loader_prefix"
+custom_loader = "tc_http_loader_prefix.loader:load"

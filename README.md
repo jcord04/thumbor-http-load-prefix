@@ -2,8 +2,6 @@
 
 Add a prefix to the HTTP Loader so that you don't have to pass the entire URL
 
-## Status
-
 ## Installation
 
 ```bash
@@ -14,11 +12,16 @@ pip install -e git+https://github.com/jcord04/thumbor-http-load-prefix.git@maste
 pip install tc_http_loader_prefix
 ```
 
+## Running Test
+in the project root, run 
+
+```pytest```
+
 ## Configuration
 
 ```python
 # thumbor.conf
-LOADER = 'tc_http_loader_prefix.http_loader_prefix'
+LOADER = 'tc_http_loader_prefix.loader'
 
 TC_HTTP_LOADER_PREFIX = 'https://your-domain/'
 
