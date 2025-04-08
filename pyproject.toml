@@ -12,8 +12,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
-license = "MIT"
-license-files = ["LICEN[CS]E*"]
+license = { text = "MIT" }
 
 [project.urls]
 Homepage = "https://github.com/jcord04/thumbor-http-load-prefix"
@@ -26,6 +25,9 @@ dev = ["pytest"]
 
 [tool.setuptools.packages.find]
 where = ["."]
+
+[tool.setuptools]
+license-files = ["LICENSE", "LICENCE"]
 
 [project.entry-points."thumbor.loaders"]
 custom_loader = "tc_http_loader_prefix.loader:load"

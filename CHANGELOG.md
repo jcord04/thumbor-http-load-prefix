@@ -1,3 +1,7 @@
+# 0.1.3
+
+Updated Pyproject.toml
+
 # 0.1.2
 
 Added PyPI elements for publishing as well as a github action.
