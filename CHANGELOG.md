@@ -1,3 +1,7 @@
+# 0.1.4
+
+Updated Pyproject.toml to fix incorrect placement of dependencies
+
 # 0.1.3
 
 Updated Pyproject.toml
